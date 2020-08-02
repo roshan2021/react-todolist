@@ -7,7 +7,7 @@ class Todos extends Component {
         //when map through something it is creating a list, list should have keys
         //add keys, unique ie. id
         return this.props.todos.map((todo) => (
-           <TodoItem key={todo.id} todo={todo} markComplete={this.props.markComplete} />
+           <TodoItem key={todo.id} todo={todo} markComplete={this.props.markComplete} delTodo={this.props.delTodo} />
         ));
     }
 }
