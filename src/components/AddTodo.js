@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Todos from "./Todos";
 
 export class AddTodo extends Component {
     state = {
@@ -34,3 +35,5 @@ export class AddTodo extends Component {
         )
     }
 }
+
+export default AddTodo;
