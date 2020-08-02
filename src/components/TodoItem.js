@@ -10,10 +10,17 @@ export class TodoItem extends Component {
             textDecoration: this.props.todo.completed ? 'line-through' : 'none'
         }
     }
+
+
+
     render() {
-        return (        //method in style
+        const { id, title } = this.props.todo;
+        return (
             <div style={this.getStyle()}>
-                <p>{this.props.todo.title}</p>
+                <p>
+                    <input type="checkbox" onChange={this.props.markComplete.bind(this, id)}/> {''}
+                    { title }
+                </p>
             </div>
         )
     }
