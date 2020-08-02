@@ -21,13 +21,12 @@ class App extends Component {
                 title: 'Meeting with boss',
                 completed: false
             }
-
         ]
     }
   render() {
     return (
         <div className="App">
-            <Todos />
+            <Todos todos={this.state.todos} />
         </div>
     );
   }
